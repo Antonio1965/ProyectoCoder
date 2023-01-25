@@ -3,7 +3,7 @@ from AppCoder import views
 
 
 urlpatterns = [
-    path('',views.inicio),
+    path('inicio',views.inicio),
     path("cursos", views.cursos, name="Cursos"),
     path("profesores", views.profesores),
     path("estudiantes", views.estudiantes),

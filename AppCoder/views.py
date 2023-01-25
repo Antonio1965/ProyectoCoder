@@ -2,16 +2,16 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def inicio(resquest):
-  return HttpResponse("visita inicio")
+  return render(resquest, "AppCoder/inicio.html")
 
 def cursos(resquest):
-  return HttpResponse("vista cursos")
+  return render(resquest,"AppCoder/verCursos.html")
 
 def profesores(resquest):
-  return HttpResponse("vistaprofesores")
+  return render(resquest,"AppCoder/verProfesores.html")
 
 def estudiantes(resquest):
-  return HttpResponse("vista estudiantes")
+  return render(resquest,"Appcoder/verEstudiantes.html")
 
 def entregables(resquest):
-  return HttpResponse("vistaentregables")
+  return render(resquest,"AppCoder/verEntregables.html")
